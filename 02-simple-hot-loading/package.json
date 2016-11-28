@@ -1,5 +1,5 @@
 {
-  "name": "react-wp-hot-loading",
+  "name": "simple-hot-loading",
   "version": "1.0.0",
   "description": "",
   "main": "index.tsx",
@@ -18,6 +18,10 @@
     "typescript": "^2.2.0-dev.20161127",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wharsojo/react-with-typescript.git"
   },
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
