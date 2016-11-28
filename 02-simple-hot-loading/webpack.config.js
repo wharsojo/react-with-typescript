@@ -18,7 +18,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("dist/style.min.css", {allChunks: true}),
-        new webpack.optimize.CommonsChunkPlugin({name:'vendor',filename:"vendor.js",minChunks: Infinity}),
+        new webpack.optimize.CommonsChunkPlugin({name:'vendor',filename:"public/js/vendor.js",minChunks: Infinity}),
         new webpack.optimize.UglifyJsPlugin({minimize: true}),
         // other plugins
     ],
