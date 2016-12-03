@@ -11,9 +11,9 @@ module.exports = {
         publicPath: `http://localhost:${port}/`,
     },
     module: {
-        // '.ts' or '.tsx' will be handled by 'awesome-typescript-loader'.
+        // '.ts' or '.tsx' will be handled by 'ts-loader'.
         loaders: [
-            { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+            { test: /\.tsx?$/, loader: 'ts-loader' },
             { test: /\.scss$/, loader: 'style!css!sass' },
             { test: /\.css$/,  loader: 'style!css' },
         ]

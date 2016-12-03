@@ -7,12 +7,12 @@ module.exports = {
         'webpack/hot/only-dev-server',
     ],
     output: {
-        filename: 'dist/bundle.js',
+        filename: 'js/bundle.js',
         publicPath: `http://localhost:${port}/`,
     },
     module: {
-        // '.ts' or '.tsx' will be handled by 'awesome-typescript-loader'.
-        loaders: [{ test: /\.tsx?$/, loader: 'awesome-typescript-loader' }]
+        // '.ts' or '.tsx' will be handled by 'ts-loader'.
+        loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
@@ -20,7 +20,7 @@ module.exports = {
     ],
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        extensions: ["", ".ts", ".tsx", ".js"]
     },
     externals: {
         // This is to avoid bundling all of our dependencies,

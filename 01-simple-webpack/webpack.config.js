@@ -7,7 +7,7 @@ module.exports = {
     },
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        extensions: ["", ".ts", ".tsx", ".js"]
     },
     externals: {
         // This is to avoid bundling all of our dependencies,
